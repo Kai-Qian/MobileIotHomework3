@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmu.willqian.alarmclockhue.fragments.ScenesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/light_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:dividerHeight="1sp">
+        </ListView>
+
+        <ImageButton
+            android:id="@+id/btnBright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sun_96"
+            android:layout_below="@id/light_list"
+            android:layout_marginLeft="50sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bright"
+            android:layout_below="@id/btnBright"
+            android:layout_marginLeft="80sp"/>
+        <ImageButton
+            android:id="@+id/btnDim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_sunlight_96"
+            android:layout_below="@id/light_list"
+            android:layout_toRightOf="@id/btnBright"
+            android:layout_marginLeft="50sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dimmed"
+            android:layout_below="@id/btnDim"
+            android:layout_toRightOf="@id/btnBright"
+            android:layout_marginLeft="75sp"/>
+        <ImageButton
+            android:id="@+id/btnNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bright_moon_96"
+            android:layout_below="@id/btnBright"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="50sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night"
+            android:layout_below="@id/btnNight"
+            android:layout_marginLeft="80sp"/>
+        <ImageButton
+            android:id="@+id/btnSOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/survival_bag_96"
+            android:layout_below="@id/btnDim"
+            android:layout_toRightOf="@id/btnNight"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="50sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS"
+            android:layout_below="@id/btnSOS"
+            android:layout_toRightOf="@id/btnNight"
+            android:layout_marginLeft="85sp"/>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
